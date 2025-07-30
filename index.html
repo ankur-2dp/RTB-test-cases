@@ -1,0 +1,3315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginkgo Test Case Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+  
+      h1 {
+        text-align: center;
+        color: #333; /* Header color */
+      }
+  
+      .test-case {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
+  
+      .test-case-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #007bff; /* Header color */
+      }
+  
+      .test-case-location {
+        font-size: 14px;
+        color: #666;
+      }
+  
+      .test-case-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+  
+      .test-case-status {
+        font-size: 14px;
+        font-weight: bold;
+        color: green; /* Status color */
+      }
+  
+      .test-case-timeline {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+  
+      .event {
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+  
+      .event-type {
+        margin-right: 10px;
+        font-weight: bold;
+      }
+  
+      .event-message {
+        font-size: 14px;
+        color: #333;
+      }
+  
+      .event-time {
+        font-size: 14px;
+        color: #666;
+        margin-left: auto;
+      }
+  
+      /* Different colors for events */
+      .event-started {
+        background-color: #ebfbee;
+      }
+  
+      .event-running {
+        background-color: #f9f2f4;
+      }
+  
+      .event-error {
+        background-color: #ffe3e3;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>Real Time Billing Test Case Results</h1>
+
+    <!-- Search Input and Button -->
+    <div id="search-section">
+        <input type="text" id="searchInput" placeholder="Search test cases...">
+        <button onclick="filterTestCases()">Search</button>
+    </div>
+</br>
+
+    <div id="test-cases"></div>
+
+    <script>
+        const testData = [
+      {
+        "ContainerHierarchyTexts": null,
+        "ContainerHierarchyLocations": null,
+        "ContainerHierarchyLabels": null,
+        "LeafNodeType": "BeforeSuite",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+          "LineNumber": 36
+        },
+        "LeafNodeLabels": null,
+        "LeafNodeText": "",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.440142+05:30",
+        "EndTime": "2025-07-30T12:13:50.938654+05:30",
+        "RunTime": 498511083,
+        "ParallelProcess": 1,
+        "NumAttempts": 0,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+              "LineNumber": 36
+            },
+            "TimelineLocation": {
+              "Order": 1,
+              "Time": "2025-07-30T12:13:50.440144+05:30"
+            },
+            "Message": "TOP-LEVEL",
+            "NodeType": "BeforeSuite"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+              "LineNumber": 36
+            },
+            "TimelineLocation": {
+              "Order": 3,
+              "Time": "2025-07-30T12:13:50.938653+05:30"
+            },
+            "Message": "TOP-LEVEL",
+            "Duration": 498509000,
+            "NodeType": "BeforeSuite"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1: Expected ONLY_NFBO with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 62
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 79
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.938705+05:30",
+        "EndTime": "2025-07-30T12:13:50.938935+05:30",
+        "RunTime": 230042,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 36
+            },
+            "TimelineLocation": {
+              "Order": 4,
+              "Time": "2025-07-30T12:13:50.938708+05:30"
+            },
+            "Message": "Refund",
+            "NodeType": "BeforeAll"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 36
+            },
+            "TimelineLocation": {
+              "Order": 6,
+              "Time": "2025-07-30T12:13:50.938858+05:30"
+            },
+            "Message": "Refund",
+            "Duration": 150333,
+            "NodeType": "BeforeAll"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 69
+            },
+            "TimelineLocation": {
+              "Order": 7,
+              "Time": "2025-07-30T12:13:50.938859+05:30"
+            },
+            "Message": "Case-1: Expected ONLY_NFBO with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 69
+            },
+            "TimelineLocation": {
+              "Order": 9,
+              "Time": "2025-07-30T12:13:50.938895+05:30"
+            },
+            "Message": "Case-1: Expected ONLY_NFBO with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10",
+            "Duration": 36250,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 79
+            },
+            "TimelineLocation": {
+              "Order": 10,
+              "Time": "2025-07-30T12:13:50.938897+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 79
+            },
+            "TimelineLocation": {
+              "Order": 12,
+              "Time": "2025-07-30T12:13:50.938932+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+            "Duration": 34917,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 86
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 103
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.938945+05:30",
+        "EndTime": "2025-07-30T12:13:50.938991+05:30",
+        "RunTime": 46750,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 93
+            },
+            "TimelineLocation": {
+              "Order": 13,
+              "Time": "2025-07-30T12:13:50.938946+05:30"
+            },
+            "Message": "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 93
+            },
+            "TimelineLocation": {
+              "Order": 15,
+              "Time": "2025-07-30T12:13:50.938971+05:30"
+            },
+            "Message": "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5",
+            "Duration": 25417,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 103
+            },
+            "TimelineLocation": {
+              "Order": 16,
+              "Time": "2025-07-30T12:13:50.938972+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 103
+            },
+            "TimelineLocation": {
+              "Order": 18,
+              "Time": "2025-07-30T12:13:50.938983+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "Duration": 11792,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 110
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 127
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939001+05:30",
+        "EndTime": "2025-07-30T12:13:50.939064+05:30",
+        "RunTime": 62750,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 117
+            },
+            "TimelineLocation": {
+              "Order": 19,
+              "Time": "2025-07-30T12:13:50.939003+05:30"
+            },
+            "Message": "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 117
+            },
+            "TimelineLocation": {
+              "Order": 21,
+              "Time": "2025-07-30T12:13:50.939042+05:30"
+            },
+            "Message": "Case-1:Expected ONLY_NFBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5",
+            "Duration": 39333,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 127
+            },
+            "TimelineLocation": {
+              "Order": 22,
+              "Time": "2025-07-30T12:13:50.939043+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 127
+            },
+            "TimelineLocation": {
+              "Order": 24,
+              "Time": "2025-07-30T12:13:50.939059+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "Duration": 16833,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-2:Expected NFBO_PLUS_FBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 134
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 157
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_PLUS_FBO with a debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939071+05:30",
+        "EndTime": "2025-07-30T12:13:50.939133+05:30",
+        "RunTime": 62333,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 144
+            },
+            "TimelineLocation": {
+              "Order": 25,
+              "Time": "2025-07-30T12:13:50.939073+05:30"
+            },
+            "Message": "Case-2:Expected NFBO_PLUS_FBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 144
+            },
+            "TimelineLocation": {
+              "Order": 27,
+              "Time": "2025-07-30T12:13:50.939113+05:30"
+            },
+            "Message": "Case-2:Expected NFBO_PLUS_FBO with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 40583,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 157
+            },
+            "TimelineLocation": {
+              "Order": 28,
+              "Time": "2025-07-30T12:13:50.939114+05:30"
+            },
+            "Message": "Should give goto:NFBO_PLUS_FBO with a debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 157
+            },
+            "TimelineLocation": {
+              "Order": 30,
+              "Time": "2025-07-30T12:13:50.939129+05:30"
+            },
+            "Message": "Should give goto:NFBO_PLUS_FBO with a debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+            "Duration": 14916,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 166
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 189
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939149+05:30",
+        "EndTime": "2025-07-30T12:13:50.939206+05:30",
+        "RunTime": 56167,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 176
+            },
+            "TimelineLocation": {
+              "Order": 31,
+              "Time": "2025-07-30T12:13:50.939152+05:30"
+            },
+            "Message": "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 176
+            },
+            "TimelineLocation": {
+              "Order": 33,
+              "Time": "2025-07-30T12:13:50.939191+05:30"
+            },
+            "Message": "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12",
+            "Duration": 39084,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 189
+            },
+            "TimelineLocation": {
+              "Order": 34,
+              "Time": "2025-07-30T12:13:50.939192+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 189
+            },
+            "TimelineLocation": {
+              "Order": 36,
+              "Time": "2025-07-30T12:13:50.939202+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+            "Duration": 9791,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 196
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 219
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939212+05:30",
+        "EndTime": "2025-07-30T12:13:50.93927+05:30",
+        "RunTime": 58208,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 206
+            },
+            "TimelineLocation": {
+              "Order": 37,
+              "Time": "2025-07-30T12:13:50.939215+05:30"
+            },
+            "Message": "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 206
+            },
+            "TimelineLocation": {
+              "Order": 39,
+              "Time": "2025-07-30T12:13:50.939253+05:30"
+            },
+            "Message": "Case-3:Expected NFBO_FBO_OVERDRAFT with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18",
+            "Duration": 38667,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 219
+            },
+            "TimelineLocation": {
+              "Order": 40,
+              "Time": "2025-07-30T12:13:50.939254+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 219
+            },
+            "TimelineLocation": {
+              "Order": 42,
+              "Time": "2025-07-30T12:13:50.939266+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with a debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+            "Duration": 11625,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 226
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 249
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939277+05:30",
+        "EndTime": "2025-07-30T12:13:50.93934+05:30",
+        "RunTime": 62750,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 236
+            },
+            "TimelineLocation": {
+              "Order": 43,
+              "Time": "2025-07-30T12:13:50.939279+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 236
+            },
+            "TimelineLocation": {
+              "Order": 45,
+              "Time": "2025-07-30T12:13:50.939326+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 46459,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 249
+            },
+            "TimelineLocation": {
+              "Order": 46,
+              "Time": "2025-07-30T12:13:50.939327+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 249
+            },
+            "TimelineLocation": {
+              "Order": 48,
+              "Time": "2025-07-30T12:13:50.939336+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "Duration": 9667,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 256
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 279
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939347+05:30",
+        "EndTime": "2025-07-30T12:13:50.939408+05:30",
+        "RunTime": 60875,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 266
+            },
+            "TimelineLocation": {
+              "Order": 49,
+              "Time": "2025-07-30T12:13:50.939348+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 266
+            },
+            "TimelineLocation": {
+              "Order": 51,
+              "Time": "2025-07-30T12:13:50.939393+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 44542,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 279
+            },
+            "TimelineLocation": {
+              "Order": 52,
+              "Time": "2025-07-30T12:13:50.939394+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 279
+            },
+            "TimelineLocation": {
+              "Order": 54,
+              "Time": "2025-07-30T12:13:50.939404+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "Duration": 10000,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 286
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 309
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939421+05:30",
+        "EndTime": "2025-07-30T12:13:50.939477+05:30",
+        "RunTime": 55541,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 296
+            },
+            "TimelineLocation": {
+              "Order": 55,
+              "Time": "2025-07-30T12:13:50.939424+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 296
+            },
+            "TimelineLocation": {
+              "Order": 57,
+              "Time": "2025-07-30T12:13:50.939464+05:30"
+            },
+            "Message": "Case-4:EXPECTED INSUFFICIENT_FUNDS with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 40041,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 309
+            },
+            "TimelineLocation": {
+              "Order": 58,
+              "Time": "2025-07-30T12:13:50.939464+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 309
+            },
+            "TimelineLocation": {
+              "Order": 60,
+              "Time": "2025-07-30T12:13:50.939473+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS",
+            "Duration": 8791,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 316
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 339
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939483+05:30",
+        "EndTime": "2025-07-30T12:13:50.939546+05:30",
+        "RunTime": 63125,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 326
+            },
+            "TimelineLocation": {
+              "Order": 61,
+              "Time": "2025-07-30T12:13:50.939485+05:30"
+            },
+            "Message": "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 326
+            },
+            "TimelineLocation": {
+              "Order": 63,
+              "Time": "2025-07-30T12:13:50.939528+05:30"
+            },
+            "Message": "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 42875,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 339
+            },
+            "TimelineLocation": {
+              "Order": 64,
+              "Time": "2025-07-30T12:13:50.939528+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 339
+            },
+            "TimelineLocation": {
+              "Order": 66,
+              "Time": "2025-07-30T12:13:50.939541+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "Duration": 12208,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 346
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 369
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939553+05:30",
+        "EndTime": "2025-07-30T12:13:50.939607+05:30",
+        "RunTime": 53834,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 356
+            },
+            "TimelineLocation": {
+              "Order": 67,
+              "Time": "2025-07-30T12:13:50.939555+05:30"
+            },
+            "Message": "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 356
+            },
+            "TimelineLocation": {
+              "Order": 69,
+              "Time": "2025-07-30T12:13:50.939591+05:30"
+            },
+            "Message": "Case-5:EXPECTED ONLY_FBO with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 35416,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 369
+            },
+            "TimelineLocation": {
+              "Order": 70,
+              "Time": "2025-07-30T12:13:50.939592+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 369
+            },
+            "TimelineLocation": {
+              "Order": 72,
+              "Time": "2025-07-30T12:13:50.939602+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "Duration": 10666,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 376
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 399
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939614+05:30",
+        "EndTime": "2025-07-30T12:13:50.939668+05:30",
+        "RunTime": 53625,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 386
+            },
+            "TimelineLocation": {
+              "Order": 73,
+              "Time": "2025-07-30T12:13:50.939615+05:30"
+            },
+            "Message": "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 386
+            },
+            "TimelineLocation": {
+              "Order": 75,
+              "Time": "2025-07-30T12:13:50.939651+05:30"
+            },
+            "Message": "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19",
+            "Duration": 35250,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 399
+            },
+            "TimelineLocation": {
+              "Order": 76,
+              "Time": "2025-07-30T12:13:50.939652+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 399
+            },
+            "TimelineLocation": {
+              "Order": 78,
+              "Time": "2025-07-30T12:13:50.939662+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+            "Duration": 10667,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 406
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 429
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939675+05:30",
+        "EndTime": "2025-07-30T12:13:50.939734+05:30",
+        "RunTime": 59166,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 416
+            },
+            "TimelineLocation": {
+              "Order": 79,
+              "Time": "2025-07-30T12:13:50.939678+05:30"
+            },
+            "Message": "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 416
+            },
+            "TimelineLocation": {
+              "Order": 81,
+              "Time": "2025-07-30T12:13:50.939719+05:30"
+            },
+            "Message": "Case-6:EXPECTED FBO_PLUS_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 40917,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 429
+            },
+            "TimelineLocation": {
+              "Order": 82,
+              "Time": "2025-07-30T12:13:50.93972+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 429
+            },
+            "TimelineLocation": {
+              "Order": 84,
+              "Time": "2025-07-30T12:13:50.939731+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+            "Duration": 11125,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 436
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 459
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.93974+05:30",
+        "EndTime": "2025-07-30T12:13:50.939798+05:30",
+        "RunTime": 57708,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 446
+            },
+            "TimelineLocation": {
+              "Order": 85,
+              "Time": "2025-07-30T12:13:50.939742+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 446
+            },
+            "TimelineLocation": {
+              "Order": 87,
+              "Time": "2025-07-30T12:13:50.939784+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29",
+            "Duration": 42250,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 459
+            },
+            "TimelineLocation": {
+              "Order": 88,
+              "Time": "2025-07-30T12:13:50.939785+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 459
+            },
+            "TimelineLocation": {
+              "Order": 90,
+              "Time": "2025-07-30T12:13:50.939794+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 9000,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 466
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 489
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939804+05:30",
+        "EndTime": "2025-07-30T12:13:50.939857+05:30",
+        "RunTime": 53167,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 476
+            },
+            "TimelineLocation": {
+              "Order": 91,
+              "Time": "2025-07-30T12:13:50.939806+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 476
+            },
+            "TimelineLocation": {
+              "Order": 93,
+              "Time": "2025-07-30T12:13:50.939842+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11",
+            "Duration": 36250,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 489
+            },
+            "TimelineLocation": {
+              "Order": 94,
+              "Time": "2025-07-30T12:13:50.939844+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 489
+            },
+            "TimelineLocation": {
+              "Order": 96,
+              "Time": "2025-07-30T12:13:50.939853+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 9792,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 496
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 519
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939864+05:30",
+        "EndTime": "2025-07-30T12:13:50.939913+05:30",
+        "RunTime": 48834,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 506
+            },
+            "TimelineLocation": {
+              "Order": 97,
+              "Time": "2025-07-30T12:13:50.939866+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 506
+            },
+            "TimelineLocation": {
+              "Order": 99,
+              "Time": "2025-07-30T12:13:50.939898+05:30"
+            },
+            "Message": "Case-7:EXPECTED INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1",
+            "Duration": 32125,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 519
+            },
+            "TimelineLocation": {
+              "Order": 100,
+              "Time": "2025-07-30T12:13:50.939899+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 519
+            },
+            "TimelineLocation": {
+              "Order": 102,
+              "Time": "2025-07-30T12:13:50.939909+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 10584,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1: Expected only nfbo authorization with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 528
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 557
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.939931+05:30",
+        "EndTime": "2025-07-30T12:13:50.940188+05:30",
+        "RunTime": 257542,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 539
+            },
+            "TimelineLocation": {
+              "Order": 103,
+              "Time": "2025-07-30T12:13:50.939934+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 539
+            },
+            "TimelineLocation": {
+              "Order": 105,
+              "Time": "2025-07-30T12:13:50.940164+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with,  SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $10",
+            "Duration": 230833,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 557
+            },
+            "TimelineLocation": {
+              "Order": 106,
+              "Time": "2025-07-30T12:13:50.940166+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 557
+            },
+            "TimelineLocation": {
+              "Order": 108,
+              "Time": "2025-07-30T12:13:50.940183+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=$10",
+            "Duration": 17875,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 572
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 601
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with a nfbo authorization debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.940196+05:30",
+        "EndTime": "2025-07-30T12:13:50.940319+05:30",
+        "RunTime": 122417,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 583
+            },
+            "TimelineLocation": {
+              "Order": 109,
+              "Time": "2025-07-30T12:13:50.940198+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 583
+            },
+            "TimelineLocation": {
+              "Order": 111,
+              "Time": "2025-07-30T12:13:50.940296+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $5",
+            "Duration": 97541,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 601
+            },
+            "TimelineLocation": {
+              "Order": 112,
+              "Time": "2025-07-30T12:13:50.940297+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 601
+            },
+            "TimelineLocation": {
+              "Order": 114,
+              "Time": "2025-07-30T12:13:50.940313+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization debitAmountFromFBO=0 and debitAmountFromNFBO=$5",
+            "Duration": 16542,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 616
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 645
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=netDebitableAmountFromMerchantInCents",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.940326+05:30",
+        "EndTime": "2025-07-30T12:13:50.940423+05:30",
+        "RunTime": 96792,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 627
+            },
+            "TimelineLocation": {
+              "Order": 115,
+              "Time": "2025-07-30T12:13:50.940329+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 627
+            },
+            "TimelineLocation": {
+              "Order": 117,
+              "Time": "2025-07-30T12:13:50.940403+05:30"
+            },
+            "Message": "Case-1: Expected only nfbo authorization with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit!=0($1000), Net_Withdrawable_Amount_From_Merchant = $5",
+            "Duration": 73958,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 645
+            },
+            "TimelineLocation": {
+              "Order": 118,
+              "Time": "2025-07-30T12:13:50.940403+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=netDebitableAmountFromMerchantInCents",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 645
+            },
+            "TimelineLocation": {
+              "Order": 120,
+              "Time": "2025-07-30T12:13:50.940419+05:30"
+            },
+            "Message": "Should give goto:ONLY_NFBO with a nfbo authorization and debitAmountFromFBO=0 and debitAmountFromNFBO=netDebitableAmountFromMerchantInCents",
+            "Duration": 15833,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-2: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 660
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 695
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_PLUS_FBO with 2 authorizations and debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.94043+05:30",
+        "EndTime": "2025-07-30T12:13:50.940533+05:30",
+        "RunTime": 102750,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 674
+            },
+            "TimelineLocation": {
+              "Order": 121,
+              "Time": "2025-07-30T12:13:50.940432+05:30"
+            },
+            "Message": "Case-2: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 674
+            },
+            "TimelineLocation": {
+              "Order": 123,
+              "Time": "2025-07-30T12:13:50.940515+05:30"
+            },
+            "Message": "Case-2: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 82875,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 695
+            },
+            "TimelineLocation": {
+              "Order": 124,
+              "Time": "2025-07-30T12:13:50.940516+05:30"
+            },
+            "Message": "Should give goto:NFBO_PLUS_FBO with 2 authorizations and debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 695
+            },
+            "TimelineLocation": {
+              "Order": 126,
+              "Time": "2025-07-30T12:13:50.940529+05:30"
+            },
+            "Message": "Should give goto:NFBO_PLUS_FBO with 2 authorizations and debitAmountFromNFBO=$5 and debitAmountFromFBO=$4",
+            "Duration": 13083,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 715
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 750
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.941914+05:30",
+        "EndTime": "2025-07-30T12:13:50.942135+05:30",
+        "RunTime": 221750,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 729
+            },
+            "TimelineLocation": {
+              "Order": 127,
+              "Time": "2025-07-30T12:13:50.941924+05:30"
+            },
+            "Message": "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 729
+            },
+            "TimelineLocation": {
+              "Order": 129,
+              "Time": "2025-07-30T12:13:50.942101+05:30"
+            },
+            "Message": "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5)  and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $12",
+            "Duration": 177292,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 750
+            },
+            "TimelineLocation": {
+              "Order": 130,
+              "Time": "2025-07-30T12:13:50.942102+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 750
+            },
+            "TimelineLocation": {
+              "Order": 132,
+              "Time": "2025-07-30T12:13:50.942125+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$7($5nfbo + $2overdraft) and debitAmountFromFBO=$5",
+            "Duration": 23125,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 768
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 803
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.94215+05:30",
+        "EndTime": "2025-07-30T12:13:50.942362+05:30",
+        "RunTime": 212375,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 782
+            },
+            "TimelineLocation": {
+              "Order": 133,
+              "Time": "2025-07-30T12:13:50.942172+05:30"
+            },
+            "Message": "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 782
+            },
+            "TimelineLocation": {
+              "Order": 135,
+              "Time": "2025-07-30T12:13:50.942306+05:30"
+            },
+            "Message": "Case-3: Expected 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $18",
+            "Duration": 133834,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 803
+            },
+            "TimelineLocation": {
+              "Order": 136,
+              "Time": "2025-07-30T12:13:50.942307+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 803
+            },
+            "TimelineLocation": {
+              "Order": 138,
+              "Time": "2025-07-30T12:13:50.942355+05:30"
+            },
+            "Message": "Should give goto:NFBO_FBO_OVERDRAFT with 2 authorizations and debitAmountFromNFBO=$18($10nfbo + $8overdraft) and debitAmountFromFBO=$0",
+            "Duration": 48250,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 818
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 848
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.942374+05:30",
+        "EndTime": "2025-07-30T12:13:50.942561+05:30",
+        "RunTime": 186958,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 832
+            },
+            "TimelineLocation": {
+              "Order": 139,
+              "Time": "2025-07-30T12:13:50.942378+05:30"
+            },
+            "Message": "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 832
+            },
+            "TimelineLocation": {
+              "Order": 141,
+              "Time": "2025-07-30T12:13:50.942522+05:30"
+            },
+            "Message": "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($5) and FBO_Amount!=0($5) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 144833,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 848
+            },
+            "TimelineLocation": {
+              "Order": 142,
+              "Time": "2025-07-30T12:13:50.942525+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 848
+            },
+            "TimelineLocation": {
+              "Order": 144,
+              "Time": "2025-07-30T12:13:50.942553+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "Duration": 28041,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 860
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 890
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.942576+05:30",
+        "EndTime": "2025-07-30T12:13:50.942701+05:30",
+        "RunTime": 124833,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 874
+            },
+            "TimelineLocation": {
+              "Order": 145,
+              "Time": "2025-07-30T12:13:50.942579+05:30"
+            },
+            "Message": "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 874
+            },
+            "TimelineLocation": {
+              "Order": 147,
+              "Time": "2025-07-30T12:13:50.942682+05:30"
+            },
+            "Message": "Case-4: EXPECTED 0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 102292,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 890
+            },
+            "TimelineLocation": {
+              "Order": 148,
+              "Time": "2025-07-30T12:13:50.942683+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 890
+            },
+            "TimelineLocation": {
+              "Order": 150,
+              "Time": "2025-07-30T12:13:50.942696+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "Duration": 13750,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-4: EXPECTED  0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 902
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 932
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.94271+05:30",
+        "EndTime": "2025-07-30T12:13:50.942804+05:30",
+        "RunTime": 93583,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 916
+            },
+            "TimelineLocation": {
+              "Order": 151,
+              "Time": "2025-07-30T12:13:50.942714+05:30"
+            },
+            "Message": "Case-4: EXPECTED  0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 916
+            },
+            "TimelineLocation": {
+              "Order": 153,
+              "Time": "2025-07-30T12:13:50.942787+05:30"
+            },
+            "Message": "Case-4: EXPECTED  0 authorizations with, SETUP: NFBO_Amount!=0($10) and FBO_Amount=0 and insufficient Overdraft limit($0), Net_Withdrawable_Amount_From_Merchant = $21",
+            "Duration": 73417,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 932
+            },
+            "TimelineLocation": {
+              "Order": 154,
+              "Time": "2025-07-30T12:13:50.942788+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 932
+            },
+            "TimelineLocation": {
+              "Order": 156,
+              "Time": "2025-07-30T12:13:50.9428+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS with 0 authorizations",
+            "Duration": 11750,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 944
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 979
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.942811+05:30",
+        "EndTime": "2025-07-30T12:13:50.942919+05:30",
+        "RunTime": 107708,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 958
+            },
+            "TimelineLocation": {
+              "Order": 157,
+              "Time": "2025-07-30T12:13:50.942813+05:30"
+            },
+            "Message": "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 958
+            },
+            "TimelineLocation": {
+              "Order": 159,
+              "Time": "2025-07-30T12:13:50.942898+05:30"
+            },
+            "Message": "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit=0, Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 84959,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 979
+            },
+            "TimelineLocation": {
+              "Order": 160,
+              "Time": "2025-07-30T12:13:50.942899+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 979
+            },
+            "TimelineLocation": {
+              "Order": 162,
+              "Time": "2025-07-30T12:13:50.942914+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "Duration": 15333,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 994
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1029
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.942926+05:30",
+        "EndTime": "2025-07-30T12:13:50.943024+05:30",
+        "RunTime": 98208,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1008
+            },
+            "TimelineLocation": {
+              "Order": 163,
+              "Time": "2025-07-30T12:13:50.942928+05:30"
+            },
+            "Message": "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1008
+            },
+            "TimelineLocation": {
+              "Order": 165,
+              "Time": "2025-07-30T12:13:50.94301+05:30"
+            },
+            "Message": "Case-5: EXPECTED only fbo authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and Overdraft limit!=0($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 82458,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1029
+            },
+            "TimelineLocation": {
+              "Order": 166,
+              "Time": "2025-07-30T12:13:50.943011+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1029
+            },
+            "TimelineLocation": {
+              "Order": 168,
+              "Time": "2025-07-30T12:13:50.943021+05:30"
+            },
+            "Message": "Should give goto:ONLY_FBO with fbo authorization and debitAmountFromFBO=$9 and debitAmountFromNFBO=$0",
+            "Duration": 9875,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-6: EXPECTED 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 1044
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1079
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:FBO_PLUS_OVERDRAFT with 2 authorizations and debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943031+05:30",
+        "EndTime": "2025-07-30T12:13:50.943118+05:30",
+        "RunTime": 87083,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1058
+            },
+            "TimelineLocation": {
+              "Order": 169,
+              "Time": "2025-07-30T12:13:50.943032+05:30"
+            },
+            "Message": "Case-6: EXPECTED 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1058
+            },
+            "TimelineLocation": {
+              "Order": 171,
+              "Time": "2025-07-30T12:13:50.943104+05:30"
+            },
+            "Message": "Case-6: EXPECTED 2 authorizations(nfbo,fbo) with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $19",
+            "Duration": 72125,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1079
+            },
+            "TimelineLocation": {
+              "Order": 172,
+              "Time": "2025-07-30T12:13:50.943105+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with 2 authorizations and debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1079
+            },
+            "TimelineLocation": {
+              "Order": 174,
+              "Time": "2025-07-30T12:13:50.943114+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with 2 authorizations and debitAmountFromFBO=$10 and debitAmountFromNFBO=$9",
+            "Duration": 9625,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-6: EXPECTED 1 authorization(nfbo) with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 1097
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1132
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:FBO_PLUS_OVERDRAFT with 1 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943123+05:30",
+        "EndTime": "2025-07-30T12:13:50.943205+05:30",
+        "RunTime": 81834,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1111
+            },
+            "TimelineLocation": {
+              "Order": 175,
+              "Time": "2025-07-30T12:13:50.943125+05:30"
+            },
+            "Message": "Case-6: EXPECTED 1 authorization(nfbo) with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1111
+            },
+            "TimelineLocation": {
+              "Order": 177,
+              "Time": "2025-07-30T12:13:50.943189+05:30"
+            },
+            "Message": "Case-6: EXPECTED 1 authorization(nfbo) with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and sufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $9",
+            "Duration": 63833,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1132
+            },
+            "TimelineLocation": {
+              "Order": 178,
+              "Time": "2025-07-30T12:13:50.94319+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with 1 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1132
+            },
+            "TimelineLocation": {
+              "Order": 180,
+              "Time": "2025-07-30T12:13:50.943201+05:30"
+            },
+            "Message": "Should give goto:FBO_PLUS_OVERDRAFT with 1 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$9",
+            "Duration": 11042,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 1147
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1177
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943211+05:30",
+        "EndTime": "2025-07-30T12:13:50.943309+05:30",
+        "RunTime": 98209,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1161
+            },
+            "TimelineLocation": {
+              "Order": 181,
+              "Time": "2025-07-30T12:13:50.943212+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1161
+            },
+            "TimelineLocation": {
+              "Order": 183,
+              "Time": "2025-07-30T12:13:50.943291+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount!=0($10) and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $29",
+            "Duration": 78542,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1177
+            },
+            "TimelineLocation": {
+              "Order": 184,
+              "Time": "2025-07-30T12:13:50.943292+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1177
+            },
+            "TimelineLocation": {
+              "Order": 186,
+              "Time": "2025-07-30T12:13:50.943304+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 12167,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 1189
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1219
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943317+05:30",
+        "EndTime": "2025-07-30T12:13:50.943472+05:30",
+        "RunTime": 154875,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1203
+            },
+            "TimelineLocation": {
+              "Order": 187,
+              "Time": "2025-07-30T12:13:50.943319+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1203
+            },
+            "TimelineLocation": {
+              "Order": 189,
+              "Time": "2025-07-30T12:13:50.943446+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit($10), Net_Withdrawable_Amount_From_Merchant = $11",
+            "Duration": 127417,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1219
+            },
+            "TimelineLocation": {
+              "Order": 190,
+              "Time": "2025-07-30T12:13:50.943448+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1219
+            },
+            "TimelineLocation": {
+              "Order": 192,
+              "Time": "2025-07-30T12:13:50.943466+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 18084,
+            "NodeType": "It"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": [
+          "Refund",
+          "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1"
+        ],
+        "ContainerHierarchyLocations": [
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 19
+          },
+          {
+            "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+            "LineNumber": 1231
+          }
+        ],
+        "ContainerHierarchyLabels": [
+          [],
+          []
+        ],
+        "LeafNodeType": "It",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+          "LineNumber": 1261
+        },
+        "LeafNodeLabels": [],
+        "LeafNodeText": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943484+05:30",
+        "EndTime": "2025-07-30T12:13:50.943604+05:30",
+        "RunTime": 120625,
+        "ParallelProcess": 1,
+        "NumAttempts": 1,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1245
+            },
+            "TimelineLocation": {
+              "Order": 193,
+              "Time": "2025-07-30T12:13:50.943486+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1",
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1245
+            },
+            "TimelineLocation": {
+              "Order": 195,
+              "Time": "2025-07-30T12:13:50.943559+05:30"
+            },
+            "Message": "Case-7: EXPECTED 0 authorization with, SETUP: NFBO_Amount=0 and FBO_Amount=0 and insufficient Overdraft limit(0), Net_Withdrawable_Amount_From_Merchant = $1",
+            "Duration": 72375,
+            "NodeType": "BeforeEach"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1261
+            },
+            "TimelineLocation": {
+              "Order": 196,
+              "Time": "2025-07-30T12:13:50.943559+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/refund_test.go",
+              "LineNumber": 1261
+            },
+            "TimelineLocation": {
+              "Order": 198,
+              "Time": "2025-07-30T12:13:50.943571+05:30"
+            },
+            "Message": "Should give goto:INSUFFICIENT_FUNDS_WITH_FBO_OVERDRAFT with 0 authorization and debitAmountFromFBO=$0 and debitAmountFromNFBO=$0",
+            "Duration": 11625,
+            "NodeType": "It"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/go/pkg/mod/go.uber.org/mock@v0.5.0/gomock/controller.go",
+              "LineNumber": 97
+            },
+            "TimelineLocation": {
+              "Order": 199,
+              "Time": "2025-07-30T12:13:50.943576+05:30"
+            },
+            "Message": "Refund",
+            "NodeType": "DeferCleanup (All)"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/go/pkg/mod/go.uber.org/mock@v0.5.0/gomock/controller.go",
+              "LineNumber": 97
+            },
+            "TimelineLocation": {
+              "Order": 201,
+              "Time": "2025-07-30T12:13:50.943594+05:30"
+            },
+            "Message": "Refund",
+            "Duration": 18416,
+            "NodeType": "DeferCleanup (All)"
+          },
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/go/pkg/mod/go.uber.org/mock@v0.5.0/gomock/controller.go",
+              "LineNumber": 97
+            },
+            "TimelineLocation": {
+              "Order": 202,
+              "Time": "2025-07-30T12:13:50.943595+05:30"
+            },
+            "Message": "Refund",
+            "NodeType": "DeferCleanup (All)"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/go/pkg/mod/go.uber.org/mock@v0.5.0/gomock/controller.go",
+              "LineNumber": 97
+            },
+            "TimelineLocation": {
+              "Order": 204,
+              "Time": "2025-07-30T12:13:50.943604+05:30"
+            },
+            "Message": "Refund",
+            "Duration": 8625,
+            "NodeType": "DeferCleanup (All)"
+          }
+        ]
+      },
+      {
+        "ContainerHierarchyTexts": null,
+        "ContainerHierarchyLocations": null,
+        "ContainerHierarchyLabels": null,
+        "LeafNodeType": "AfterSuite",
+        "LeafNodeLocation": {
+          "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+          "LineNumber": 61
+        },
+        "LeafNodeLabels": null,
+        "LeafNodeText": "",
+        "State": "passed",
+        "StartTime": "2025-07-30T12:13:50.943612+05:30",
+        "EndTime": "2025-07-30T12:13:51.176887+05:30",
+        "RunTime": 233275250,
+        "ParallelProcess": 1,
+        "NumAttempts": 0,
+        "MaxFlakeAttempts": 0,
+        "MaxMustPassRepeatedly": 0,
+        "SpecEvents": [
+          {
+            "SpecEventType": "Node",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+              "LineNumber": 61
+            },
+            "TimelineLocation": {
+              "Order": 205,
+              "Time": "2025-07-30T12:13:50.943612+05:30"
+            },
+            "Message": "TOP-LEVEL",
+            "NodeType": "AfterSuite"
+          },
+          {
+            "SpecEventType": "Node (End)",
+            "CodeLocation": {
+              "FileName": "/Users/ankurtiwari/Desktop/2dp-org/core/common/common_suite_test.go",
+              "LineNumber": 61
+            },
+            "TimelineLocation": {
+              "Order": 207,
+              "Time": "2025-07-30T12:13:51.176885+05:30"
+            },
+            "Message": "TOP-LEVEL",
+            "Duration": 233272959,
+            "NodeType": "AfterSuite"
+          }
+        ]
+      }
+    ]
+    const testCasesContainer = document.getElementById('test-cases');
+
+    testData.forEach((testCase) => {
+      const containerHierarchyTexts = testCase.ContainerHierarchyTexts;
+      if (containerHierarchyTexts) {
+        const testCaseDiv = document.createElement('div');
+        testCaseDiv.classList.add('test-case');
+
+        const testCaseTitle = document.createElement('div');
+        testCaseTitle.classList.add('test-case-title');
+        testCaseTitle.textContent = containerHierarchyTexts.join(' > ');
+
+        const testCaseLocation = document.createElement('div');
+        testCaseLocation.classList.add('test-case-location');
+        testCaseLocation.textContent = testCase.LeafNodeLocation.FileName + ' : ' + testCase.LeafNodeLocation.LineNumber;
+
+        const testCaseText = document.createElement('div');
+        testCaseText.classList.add('test-case-text');
+        testCaseText.textContent = testCase.LeafNodeText;
+
+        const testCaseStatus = document.createElement('div');
+        testCaseStatus.classList.add('test-case-status');
+        testCaseStatus.textContent = `Status: ${testCase.State.toUpperCase()}`;
+
+        const testCaseTimeline = document.createElement('div');
+        testCaseTimeline.classList.add('test-case-timeline');
+        testCaseTimeline.textContent = `Started at: ${testCase.StartTime}, Ended at: ${testCase.EndTime}`;
+
+        testCaseDiv.appendChild(testCaseTitle);
+        testCaseDiv.appendChild(testCaseLocation);
+        testCaseDiv.appendChild(testCaseText);
+        testCaseDiv.appendChild(testCaseStatus);
+        testCaseDiv.appendChild(testCaseTimeline);
+
+        const events = testCase.Events;
+        if (events && events.length > 0) {
+          const eventsContainer = document.createElement('div');
+          eventsContainer.classList.add('events-container');
+
+          events.forEach((event) => {
+            const eventDiv = document.createElement('div');
+            eventDiv.classList.add('event');
+            let eventClassName = 'event';
+
+            switch (event.SpecEventType) {
+              case 'Node':
+                eventClassName += '-started';
+                break;
+              case 'Node (End)':
+                eventClassName += '-running';
+                break;
+              case 'Error':
+                eventClassName += '-error';
+                break;
+            }
+
+            eventDiv.classList.add(eventClassName);
+
+            const eventType = document.createElement('div');
+            eventType.classList.add('event-type');
+            eventType.textContent = event.SpecEventType;
+
+            const eventMessage = document.createElement('div');
+            eventMessage.classList.add('event-message');
+            eventMessage.textContent = event.Message;
+
+            const eventTime = document.createElement('div');
+            eventTime.classList.add('event-time');
+            eventTime.textContent = event.Time;
+
+            eventDiv.appendChild(eventType);
+            eventDiv.appendChild(eventMessage);
+            eventDiv.appendChild(eventTime);
+
+            // Add click event to the event div
+            eventDiv.addEventListener('click', () => {
+              alert(`Clicked: ${event.Message}`);
+            });
+
+            eventsContainer.appendChild(eventDiv);
+          });
+
+          testCaseDiv.appendChild(eventsContainer);
+        }
+
+        testCasesContainer.appendChild(testCaseDiv);
+      }
+    });
+
+
+        function filterTestCases() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const testCases = document.querySelectorAll('.test-case');
+
+            testCases.forEach((testCase) => {
+                const testCaseTitle = testCase.querySelector('.test-case-title').textContent.toLowerCase();
+                const testCaseText = testCase.querySelector('.test-case-text').textContent.toLowerCase();
+                const testCaseStatus = testCase.querySelector('.test-case-status').textContent.toLowerCase();
+
+                if (
+                    testCaseTitle.includes(searchInput) ||
+                    testCaseText.includes(searchInput) ||
+                    testCaseStatus.includes(searchInput)
+                ) {
+                    testCase.style.display = 'block';
+                } else {
+                    testCase.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
